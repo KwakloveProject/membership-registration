@@ -1,0 +1,53 @@
+body{
+  margin: 0;
+    padding: 0;
+  }
+  h1{
+    text-align: center;
+  }
+  form{
+    width: 80%;
+    border: 1px dotted black;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  table {
+    width: 100%;
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+   td {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+  }
+  td.title{
+    width: 20%;
+    padding-left: 5px;
+    border-left: 1px solid white;
+  }
+  td.content{
+    width: 80%;
+    padding: 5px 5px 10px 5px;
+  }
+  td > span{
+    font-size: 13px;
+  }
+  input
+  {
+    border:1px solid lightgray ;
+    margin: 8px;
+    height: 27px;
+    border-radius: 2px;
+    background-color: #f4f4f4;
+    background-image:  url(./wrest.gif);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+ 
+
+.word
+{
+  font-family: "Dancing Script", cursive;  
+
+}

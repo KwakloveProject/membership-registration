@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="start.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Heebo:wght@100..900&family=Jacquard+24&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>회원가입</h1>
+  <form action="#" method="post">
+    <h4>사이트 이용정보 입력</h4>
+    <table>
+      <tr>
+        <td class="title"><label for="memberId">아이디</label></td>
+        <td class="content">
+          <span>영문자, 숫자, 만 입력 가능 최소3자이상 입력하세요</span><br>
+          <input type="text" name="memberId" id="memberId" size="25" minlength="3" maxlength="12" required >
+        </td>
+      </tr>
+       <tr>
+        <td class="title"><label for="password">비밀번호</label></td>
+        <td class="content">
+          <span>영문자, 숫자, 특수문자를 포함하여 6-12자를 입력하세요</span><br>
+          <input type="text" name="password" id="password" size="25" minlength="3" maxlength="12" required >
+        </td>
+      </tr>
+       <tr>
+        <td class="title"><label for="checkPassword">비밀번호 확인</label></td>
+        <td class="content">
+          <input type="text" name="checkPassword" id="checkPassword" size="25" minlength="3" maxlength="12" required >
+        </td>
+      </tr>
+    </table>
+  </form>
+  <form action="#" method="post">
+    <h4>개인정보 입력</h4>
+    <table>
+      <tr>
+        <td class="title"><label for="userName">이름</label></td>
+        <td class="content">
+          <input type="text" name="userName" id="userName" size="25" minlength="3" maxlength="12" required >
+        </td>
+      </tr>
+       <tr>
+        <td class="title"><label for="nickName">닉네임</label></td>
+        <td class="content">
+          <span>공백없이 한글,영문,숫자만 입력가능 (한글2자, 영문4자 이상)<br>닉네임을 바꾸시면 앞으로 1일 이내에는 변경할 수 없습니다.</span><br>
+          <input type="text" name="nickName" id="nickName" size="25" minlength="3" maxlength="12" required>
+        </td>
+      </tr>
+       <tr>
+        <td class="title"><label for="email"><b>E-mail</b></label></td>
+        <td class="content">
+          <input type="text" name="email" id="email" size="25" minlength="3" maxlength="12" required >
+        </td>
+      </tr>
+      <tr>
+        <td class="title"><label for="memberId"><b>가입경로</b></label></td>
+        <td class="content">
+
+          <input type="radio" name="internet"  value="1">인터넷검색
+          <input type="radio" name="internet"  value="2">배너광고
+          <input type="radio" name="internet"  value="3">관련기사를보고
+          <input type="radio" name="internet"  value="4">미라지홈페이지보고
+          <input type="radio" name="internet"  value="5">주변사람소개
+          <input type="radio" name="internet"  value="6">기타
+        </td>
+        </td>
+      </tr>
+      <tr>
+        <td class="title"><label for="phonenum"><b>전화번호</b></label></td>
+        <td class="content">
+          <input type="text" name="phonenum" id="phonenum" size="25" minlength="3" maxlength="12" required >
+        </td>
+      </tr>
+      <tr>
+        <td class="title"><label for="housenum"><b>휴대폰번호</b></label></td>
+        <td class="content">
+          <input type="text" name="housenum" id="housenum" size="25" minlength="3" maxlength="12" required >
+        </td>
+      </tr>
+      <tr>
+        <td class="title"><label for="birthday"><b>생년월일</b></label></td>
+        <td class="content">
+          <input type="date" name="birthday" id="birthday"   >
+        </td>
+      </tr>
+      <tr>
+        <td class="title"><label for="housenum"><b>주소</b></label></td>
+        <td class="content">
+          <input type="text" name="housenum" id="housenum" size="20" required >
+          <button type="button" style="background-color: black;color: white; font-size: 20px;">주소 검색</button>
+          <br>
+          <input type="text" name="housenum" id="housenum" size="50" minlength="3" maxlength="12" required ><br>
+          <input type="text" name="housenum" id="housenum" size="50" minlength="3" maxlength="12"  ><br>
+          <input type="text" name="housenum" id="housenum" size="50" minlength="3" maxlength="12"  >
+        </td>
+      </tr>
+      <tr>
+      </tr>
+    </table>
+  </form>
+  <form action="#" method="post">
+    <h4>개인정보 입력</h4>
+   <table>
+     <tr>
+       <td class="title"><label for="setting">기타 개인설정</label></td>
+     <td class="content">
+       <input type="checkbox" name="setting" id="setting"value="1" > 카카오톡 메세지를 받겠습니다. <span style="color: red;">>수신체크를 하시면 세일 소식을 가장 먼저 받아보실 수있습니다.</span>
+     </td>
+     </tr>
+     <tr>
+      <td class="title"><label for="setting">메일링서비스</label></td>
+    <td class="content">
+      <input type="checkbox" name="setting" id="setting"value="1" > 정보 메일을 받겠습니다. 
+    </td>
+    </tr>
+    <tr>
+      <td class="title"><label for="setting">SMS수신여부</label></td>
+    <td class="content">
+      <input type="checkbox" name="setting" id="setting"value="1" > 휴대폰 문자메세지를 받겠습니다. 
+    </td>
+    </tr>
+    <tr>
+      <td class="title"><label for="setting">정보 공개</label></td>
+    <td class="content">
+      <span>정보공개를 바꾸시면 앞으로 0일 이내에는 변경이 안됩니다.</span><br>
+      <input type="checkbox" name="setting" id="setting"value="1" > 다른분들이 나의 정보를 볼 수 있도록 합니다.
+    </td>
+    </tr>
+    <tr>
+      <td class="title"><label for="setting">자동등록방지</label></td>
+    <td class="content">
+      <p style="border: 1px solid black; width: 75px; display: inline-block; "><span1 class="word" >X</span1><span1 class="word" style="font-size: 11px;" >HY</span1><span1 >wW</span1><span1 class="word">2</span1>q </p>
+      <button type="button"  >코드생성</button>
+      <input type="text" name="housenum" id="housenum" size="25" minlength="3" maxlength="12" required > <button type="button"  > 비교</button><br>
+      <span>자동등록방지 문자와 숫자를 순서대로 입력해 주세요</span>
+    </td>
+    </tr>
+  </table>
+</form>
+<button type="submit" style="margin-left: 45%;">회원가입</button> <button type="submit" >취소</button> 
+
+</body>
+</html>
